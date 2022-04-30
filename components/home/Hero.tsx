@@ -1,13 +1,200 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { Grid } from "@mui/material";
 
-// styled Component
-const Container = styled.section``;
+// styled-components
+const Container = styled.section`
+	padding-block: 4rem;
+`;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+	max-width: 85%;
+	margin: auto;
+
+	@media (max-width: 600px) {
+		max-width: 95%;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		max-width: 90%;
+	}
+`;
+// Image Style
+const ImageWrapper = styled.div`
+	position: relative;
+	z-index: 0;
+`;
+
+const ImageContent = styled.img`
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	/* position */
+	position: relative;
+	left: 20%;
+
+	@media (max-width: 600px) {
+		left: 0;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		max-width: 90%;
+	}
+`;
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const ImageShadow = styled.img`
+	position: absolute;
+	top: -5%;
+	left: -25%;
+	z-index: -1;
+	animation: ${rotate} 4s linear infinite;
+`;
+
+// Text Style
+const TextWrapper = styled.div`
+	color: var(--SecondColor);
+`;
+
+const TextBox = styled.div`
+	padding-block: 1rem;
+`;
+
+const HeaderText = styled.h2`
+	font-size: 2.5rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	line-height: 1.5;
+	/* margin */
+	margin-bottom: 2rem;
+`;
+
+const GreenText = styled.span`
+	color: var(--MainColor);
+`;
+
+const DescriptionBox = styled.div`
+	border-left: 2px solid var(--MainColor);
+	padding-left: 1rem;
+`;
+
+const DescriptionText = styled.p`
+	font-size: 1.2rem;
+	font-weight: 300;
+	opacity: 0.8;
+	line-height: 2;
+	letter-spacing: 0.5px;
+`;
+
+const ButtonWrapper = styled.div`
+	/* display */
+	display: flex;
+	align-items: center;
+	/* margin */
+	margin-top: 5rem;
+`;
+
+const ButtonBox = styled.span`
+	margin-left: 0.5rem;
+`;
+
+const GreenButton = styled.button`
+	/* color */
+	color: var(--SecondColor);
+	background: linear-gradient(94.25deg, #3dc9b0 0%, #5dd39e 100%);
+	border-radius: 2rem;
+	/* display */
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	/* font */
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	/* padding */
+	padding: 1.1rem 2.2rem;
+`;
+
+const WhiteButton = styled.button`
+	/* color */
+	color: var(--SecondColor);
+	background: transparent;
+	border-radius: 2rem;
+	/* display */
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	/* font */
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	/* padding & marign */
+	padding: 1rem 2.2rem;
+	margin-left: 1.5rem;
+	/* border */
+	border: 2px solid var(--SecondColor);
+`;
+
+const ButtonIcon = styled.img`
+	height: 100%;
+	width: 100%;
+`;
 
 function Hero() {
-	return <Container>Hero</Container>;
+	return (
+		<Container>
+			<Wrapper>
+				<Grid container alignItems='center' justifyContent='space-between'>
+					<Grid item xs={12} sm={6} md={6}>
+						<TextWrapper>
+							<HeaderText>
+								<GreenText>Codebook.studio </GreenText>is A Web Based Interactive Programming Learning
+								Tool
+							</HeaderText>
+							<TextBox>
+								<DescriptionBox>
+									<DescriptionText>
+										Codebook is a web besed fully interactive learning platfrom to help learn&nbsp;
+										<strong>JavaScript</strong>&nbsp;and&nbsp;<strong>React</strong>
+									</DescriptionText>
+								</DescriptionBox>
+								<ButtonWrapper>
+									<GreenButton>
+										Get Started&nbsp;
+										<ButtonBox>
+											<ButtonIcon src='/Logo/ArrowIcon.png' alt='Arrow Icon' />
+										</ButtonBox>
+									</GreenButton>
+									<WhiteButton>
+										Watch Video
+										<ButtonBox>
+											<ButtonIcon src='/Logo/PlayIcon.png' alt='Play Icon' />
+										</ButtonBox>
+									</WhiteButton>
+								</ButtonWrapper>
+							</TextBox>
+						</TextWrapper>
+					</Grid>
+					<Grid item xs={12} sm={6} md={6}>
+						<ImageWrapper>
+							<ImageContent src='/Props/HeroImage.png' alt='Codebook Video' />
+							<ImageShadow src='/Shadow/Large.png' alt='Codebook Video' />
+						</ImageWrapper>
+					</Grid>
+				</Grid>
+			</Wrapper>
+		</Container>
+	);
 }
 
 export default Hero;

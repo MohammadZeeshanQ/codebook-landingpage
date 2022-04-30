@@ -46,8 +46,8 @@ const rotate = keyframes`
 
 const ImageShadow = styled.img`
 	position: absolute;
-	top: -20%;
-	left: -15%;
+	top: -25%;
+	left: -25%;
 	z-index: -1;
 	animation: ${rotate} 4s linear infinite;
 `;
@@ -62,7 +62,7 @@ const TextBox = styled.div`
 `;
 
 const HeaderText = styled.h2`
-	font-size: 2.2rem;
+	font-size: 2.1rem;
 	font-weight: 500;
 	letter-spacing: 1px;
 	text-transform: capitalize;
@@ -78,19 +78,23 @@ const GreenText = styled.span`
 const DescriptionBox = styled.div`
 	/* display */
 	display: flex;
-
 	justify-content: start;
+	align-items: start;
 	gap: 1rem;
+	/* margin */
+	margin-bottom: 2em;
 `;
 
 const DescriptionIcon = styled.img`
+	/* size */
+	margin-top: 0.5rem;
 	width: 1rem;
 	object-fit: contain;
 `;
 
 const DescriptionText = styled.p`
 	opacity: 0.8;
-	line-height: 1.5;
+	line-height: 2;
 	letter-spacing: 0.5px;
 `;
 
@@ -98,30 +102,38 @@ const ButtonWrapper = styled.div`
 	margin-top: 4rem;
 `;
 
-export default function FunctionGrid() {
+export default function FirstGrid() {
 	return (
 		<Container>
 			<Wrapper>
-				<Grid container alignItems='center' justifyContent='space-around' direction='row-reverse'>
+				<Grid container alignItems='center' justifyContent='space-around' direction='row'>
 					<Grid item xs={12} sm={6} md={6}>
 						<ImageWrapper>
-							<ImageContent src='/Props/GridImage2.png' alt='Codebook Video' />
-							<ImageShadow src='/Shadow/Medium.png' alt='Codebook Video' />
+							<ImageContent src='/Props/GridImage1.png' alt='Codebook Video' />
+							<ImageShadow src='/Shadow/Large.png' alt='Codebook Video' />
 						</ImageWrapper>
 					</Grid>
 					<Grid item xs={12} sm={5} md={5}>
 						<TextWrapper>
 							<HeaderText>
-								Use the show ( ) function to run your
-								<GreenText> code </GreenText>
+								Add as many code or text cells to create your<GreenText> codebook </GreenText>
+								to your liking
 							</HeaderText>
 							<TextBox>
 								<DescriptionBox>
 									<DescriptionIcon src='/Logo/DescriptionIcon.png' alt='Codebook Descrption Icons' />
 									<DescriptionText>
-										Create react components and run show (App) to view output
+										Create a codebook and use the text Block to annotate your code blocks with
+										documentation
 									</DescriptionText>
 								</DescriptionBox>
+								<DescriptionBox>
+									<DescriptionIcon src='/Logo/DescriptionIcon.png' alt='Codebook Descrption Icons' />
+									<DescriptionText>
+										All blocks can be resized and formatted to your loking
+									</DescriptionText>
+								</DescriptionBox>
+
 								<ButtonWrapper>
 									<GreenButton>Explore More</GreenButton>
 								</ButtonWrapper>

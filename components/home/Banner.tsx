@@ -37,6 +37,11 @@ const Header = styled.h2`
 	margin-bottom: 4rem;
 `;
 
+const ButtonBox = styled.span`
+	text-align: center;
+	margin: auto;
+`;
+
 export default function Banner() {
 	return (
 		<Container>
@@ -47,7 +52,9 @@ export default function Banner() {
 						<br />
 						optimised for learning
 					</Header>
-					<GreenButton>Get Started</GreenButton>
+					<ButtonBox>
+						<GreenButton>Get Started</GreenButton>
+					</ButtonBox>
 				</TextWrapper>
 			</Wrapper>
 		</Container>
