@@ -1,0 +1,58 @@
+/*Root Color and Font Size  */
+:root {
+	/* Color Palates */
+	--MainColor: #5dd39e;
+	--SecondColor: #ffffff;
+	--ThemeColor: #12141d;
+	--lightDescriptionColor: #615f5f;
+	--boxShadowColor: #615f5f;
+	--blackColor: #101010;
+	/* Text Font Sizes */
+	--MobileFontSize: 0.9rem;
+	--MobileFontSizeSmall: 0.7rem;
+	--TabletFontSize: 0.8rem;
+	--TabletFontSizeSmall: 0.55rem;
+	--PcFontSize: 0.9rem;
+	--PcFontSizeSmall: 0.85rem;
+}
+
+html,
+body {
+	background-color: var(--ThemeColor);
+	padding: 0;
+	margin: 0;
+	font-family: "Inter", sans-serif;
+	font-family: "Space Grotesk", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+	scroll-behavior: smooth;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Selection Color */
+::-moz-selection {
+	/* Code for Firefox */
+	color: var(--SecondColor);
+	background-color: var(--MainColor);
+}
+
+::selection {
+	color: var(--SecondColor);
+	background-color: var(--MainColor);
+}
+
+@media screen and (max-device-width: 600px) {
+	body {
+		-webkit-text-size-adjust: 100%;
+	}
+}
