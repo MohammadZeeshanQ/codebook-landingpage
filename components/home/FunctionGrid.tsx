@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Grid } from "@mui/material";
 
+// shared components
+import GreenButton from "../GreenButton";
+
 // styled-components
 const Container = styled.section``;
 
@@ -47,14 +50,17 @@ const GreenText = styled.span`
 	color: var(--MainColor);
 `;
 
-const DescriptionHeaderText = styled.h3`
-	font-size: 1.2rem;
-	font-weight: 600;
-	text-transform: capitalize;
-	line-height: 1.3;
-	letter-spacing: 1px;
-	/* margin */
-	margin-bottom: 0.5rem;
+const DescriptionBox = styled.div`
+	/* display */
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 1rem;
+`;
+
+const DescriptionIcon = styled.img`
+	width: 1rem;
+	object-fit: contain;
 `;
 
 const DescriptionText = styled.p`
@@ -63,11 +69,15 @@ const DescriptionText = styled.p`
 	letter-spacing: 0.5px;
 `;
 
-export default function VideoGrid() {
+const ButtonWrapper = styled.div`
+	margin-top: 4rem;
+`;
+
+export default function FunctionGrid() {
 	return (
 		<Container>
 			<Wrapper>
-				<Grid container alignItems='center' justifyContent='space-around'>
+				<Grid container alignItems='center' justifyContent='space-around' direction='row-reverse'>
 					<Grid item xs={12} sm={6} md={6}>
 						<ImageWrapper>
 							<ImageContent src='' alt='Codebook Video' />
@@ -76,18 +86,19 @@ export default function VideoGrid() {
 					<Grid item xs={12} sm={5} md={5}>
 						<TextWrapper>
 							<HeaderText>
-								Sign up to save a your
-								<GreenText>&nbsp;code&nbsp;</GreenText>books
+								Use the show ( ) function to run your
+								<GreenText>&nbsp;code&nbsp;</GreenText>
 							</HeaderText>
 							<TextBox>
-								<DescriptionHeaderText>Create an account in two minutes</DescriptionHeaderText>
-								<DescriptionText>
-									Directly sign ui using your email or google account. No need to confirmation needed
-								</DescriptionText>
-							</TextBox>
-							<TextBox>
-								<DescriptionHeaderText>Finally you can save your worksheets</DescriptionHeaderText>
-								<DescriptionText>Save and access your code books from anywhere</DescriptionText>
+								<DescriptionBox>
+									<DescriptionIcon src='/Logo/DescriptionIcon.png' alt='Codebook Descrption Icons' />
+									<DescriptionText>
+										Create react components and run show (App) to view output
+									</DescriptionText>
+								</DescriptionBox>
+								<ButtonWrapper>
+									<GreenButton>Explore More</GreenButton>
+								</ButtonWrapper>
 							</TextBox>
 						</TextWrapper>
 					</Grid>

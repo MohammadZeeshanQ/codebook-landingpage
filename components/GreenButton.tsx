@@ -13,7 +13,7 @@ const Button = styled.button`
 	letter-spacing: 1px;
 	cursor: pointer;
 	/* padding */
-	padding: 1.2rem 2.5rem;
+	padding: 1.1rem 2.2rem;
 `;
 
 type ButtonProps = PropsWithChildren<{}>;
