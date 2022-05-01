@@ -166,7 +166,7 @@ const NavBar: FC = () => {
 	const [drawer, setDrawer] = useState<boolean>(false);
 
 	// Drawer Handler for Tablet and Mobile device
-	const drawerHandlerClose = (drawer: boolean) => {
+	const drawerHandlerClose = (drawer: any) => {
 		setDrawer(!drawer);
 	};
 
