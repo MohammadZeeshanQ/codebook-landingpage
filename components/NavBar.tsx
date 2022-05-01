@@ -49,12 +49,12 @@ const LogoImage = styled.img`
 
 const ButtonTheme = styled.button`
 	font-size: 0.9rem;
-	font-weight: 400;
+	font-weight: 500;
 	background: transparent;
 	border: none;
 	border-radius: 0.2rem;
 	cursor: pointer;
-	letter-spacing: 0.5px;
+	letter-spacing: 1px;
 	padding: 0.6rem 0.8rem;
 `;
 
