@@ -83,6 +83,7 @@ const CTAButtonThemeOutlined = styled.button`
 	/* color */
 	color: var(--SecondColor);
 	background: transparent;
+	border: 2px solid transparent;
 	border-radius: 2rem;
 	/* font */
 	font-size: 1rem;

@@ -3,6 +3,9 @@ import styled from "styled-components";
 
 // styled-components
 const Button = styled.button`
+	/* position */
+	position: relative;
+	z-index: 1;
 	/* color */
 	color: var(--SecondColor);
 	background: linear-gradient(94.25deg, #3dc9b0 0%, #5dd39e 100%);
@@ -15,6 +18,10 @@ const Button = styled.button`
 	/* padding */
 	padding: 1.1rem 2.2rem;
 
+	&:hover {
+		transform: scale(1.03);
+		transition: transform 0.25s ease-in-out;
+	}
 	@media (min-width: 601px) and (max-width: 1024px) {
 		font-size: var(--TabletFontSizeSmall);
 		padding: 0.8rem 1.5rem;

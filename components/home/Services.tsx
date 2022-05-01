@@ -63,6 +63,10 @@ const GreenText = styled.span`
 `;
 
 const ImageWrapper = styled.div`
+	/* position */
+	position: relative;
+	z-index: 1;
+	/* padding */
 	padding: 2rem;
 
 	@media (min-width: 601px) and (max-width: 1024px) {
@@ -77,7 +81,7 @@ const ImageContent = styled.img`
 	border-radius: 1rem;
 
 	&:hover {
-		box-shadow: 5px 9px 29px #778899;
+		box-shadow: 4px 4px 20px #778899;
 		transform: scale(1.05);
 		transition: all 0.35s ease-in-out;
 	}

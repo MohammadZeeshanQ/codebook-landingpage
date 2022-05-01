@@ -40,7 +40,7 @@ const ImageContent = styled.img`
 	object-fit: cover;
 	/* position */
 	position: relative;
-	left: 20%;
+	left: 19%;
 
 	@media (max-width: 600px) {
 		left: 0;
@@ -64,7 +64,7 @@ const ImageShadow = styled.img`
 	top: 0;
 	left: -25%;
 	z-index: -1;
-	animation: ${rotate} 8s linear infinite;
+	animation: ${rotate} 4s linear infinite;
 
 	@media (max-width: 600px) {
 		top: -50%;
@@ -152,6 +152,9 @@ const ButtonBox = styled.span`
 `;
 
 const GreenButton = styled.button`
+	/* position */
+	position: relative;
+	z-index: 1;
 	/* color */
 	color: var(--SecondColor);
 	background: linear-gradient(94.25deg, #3dc9b0 0%, #5dd39e 100%);
@@ -168,6 +171,10 @@ const GreenButton = styled.button`
 	/* padding */
 	padding: 1rem 2rem;
 
+	&:hover {
+		transform: scale(1.03);
+		transition: transform 0.25s ease-in-out;
+	}
 	@media (max-width: 600px) {
 		margin-left: 0;
 		margin-top: 1.5rem;
@@ -180,6 +187,9 @@ const GreenButton = styled.button`
 `;
 
 const WhiteButton = styled.button`
+	/* position */
+	position: relative;
+	z-index: 1;
 	/* color */
 	color: var(--SecondColor);
 	background: transparent;
@@ -199,6 +209,10 @@ const WhiteButton = styled.button`
 	/* border */
 	border: 2px solid var(--SecondColor);
 
+	&:hover {
+		transform: scale(1.03);
+		transition: transform 0.25s ease-in-out;
+	}
 	@media (max-width: 600px) {
 		margin-left: 0;
 		margin-top: 1.5rem;

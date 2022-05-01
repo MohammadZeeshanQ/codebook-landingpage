@@ -39,6 +39,7 @@ const ImageContent = styled.img`
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	pointer-events: none;
 `;
 
 const rotate = keyframes`
@@ -56,7 +57,7 @@ const ImageShadow = styled.img`
 	top: -25%;
 	left: -25%;
 	z-index: -1;
-	animation: ${rotate} 8s linear infinite;
+	animation: ${rotate} 6s linear infinite;
 
 	@media (max-width: 600px) {
 		top: -90%;

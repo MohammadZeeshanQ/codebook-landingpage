@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // Shared Component
 import GreenButton from "../GreenButton";
@@ -13,6 +13,29 @@ const Container = styled.section`
 	padding-block: 5rem;
 `;
 
+const opacity = keyframes`
+  0% {
+	top: 0;
+	left: 0;
+  }
+
+  30% {
+	top: -20%;
+	left: 0;
+  }
+
+  60% {
+	bottom: -20%;
+	left: 0;
+  }
+
+
+  100% {
+	top: 0;
+	left: 0;
+  }
+`;
+
 const ImageBg = styled.img`
 	/* position */
 	position: absolute;
@@ -22,6 +45,8 @@ const ImageBg = styled.img`
 	/* size */
 	width: 100%;
 	height: 100%;
+	/* animation */
+	animation: ${opacity} 6s linear infinite;
 `;
 
 const Wrapper = styled.div`
@@ -71,6 +96,10 @@ const VectorImage = styled.img`
 	position: absolute;
 	top: -20%;
 	left: 75%;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		top: -40%;
+	}
 `;
 
 const ButtonBox = styled.span`
@@ -85,9 +114,7 @@ export default function Banner() {
 			<Wrapper>
 				<TextWrapper>
 					<Header>
-						Free to use for personal use and
-						<br />
-						optimised for learning
+						Free to use for personal use and optimised for learning
 						<VectorImage src='/Logo/Vector.png' alt='Header Vector' loading='lazy' />
 					</Header>
 					<ButtonBox>
