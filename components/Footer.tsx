@@ -62,6 +62,10 @@ const BottomNavigationBox = styled.div`
 const BottomNavigationText = styled.p`
 	cursor: pointer;
 
+	&:hover {
+		opacity: 0.7;
+		transition: opacity 0.2s ease-in-out;
+	}
 	@media (min-width: 601px) and (max-width: 1024px) {
 		font-size: var(--TabletFontSizeSmall);
 	}
@@ -89,6 +93,10 @@ const SocialIconBox = styled.div``;
 const SocialIconImage = styled.img`
 	cursor: pointer;
 
+	&:hover {
+		opacity: 0.7;
+		transition: opacity 0.2s ease-in-out;
+	}
 	@media (max-width: 600px) {
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {

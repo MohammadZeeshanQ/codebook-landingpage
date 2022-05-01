@@ -56,20 +56,19 @@ const GreenText = styled.span`
 `;
 
 const ImageWrapper = styled.div`
-	padding: 1rem;
+	padding: 2rem;
 `;
 
 const ImageContent = styled.img`
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	border-radius: 1rem;
 
 	&:hover {
-		box-shadow: 5px 9px 29px -2px rgba(130, 129, 129, 0.61);
-		-webkit-box-shadow: 5px 9px 29px -2px rgba(130, 129, 129, 0.61);
-		-moz-box-shadow: 5px 9px 29px -2px rgba(130, 129, 129, 0.61);
+		box-shadow: 5px 9px 29px #778899;
 		transform: scale(1.05);
-		transition: transform 0.4s ease-in-out;
+		transition: all 0.35s ease-in-out;
 	}
 `;
 
@@ -81,11 +80,11 @@ export default function Services() {
 		},
 		{
 			title: "Codebook Services",
-			image: "/Props/Card.png",
+			image: "/Props/Card-1.png",
 		},
 		{
 			title: "Codebook Services",
-			image: "/Props/Card.png",
+			image: "/Props/Card-2.png",
 		},
 	];
 

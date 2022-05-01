@@ -34,6 +34,16 @@ const ImageWrapper = styled.div`
 
 const ImageContent = styled.img``;
 
+const ImageShadow = styled.img`
+	/* position */
+	position: absolute;
+	top: -90%;
+	left: 0;
+	z-index: -1;
+	/* size */
+	width: 100%;
+`;
+
 const ImageArrow = styled.img`
 	/* position */
 	position: absolute;
@@ -165,14 +175,15 @@ export default function VideoGrid() {
 					<Grid item xs={12} sm={5} md={5}>
 						<ImageWrapper>
 							<ImageContent src='/Props/BlackPlayButton.png' alt='Codebook Video' />
-							<ImageArrow src='/Logo/ArrowCircular.png' alt='Arrow Circular' />
-							<ImageStar src='/Logo/starVector.png' alt='Start Vector' />
+							<ImageShadow src='/Shadow/Small.png' alt='Codebook Video' loading='lazy' />
+							<ImageArrow src='/Logo/ArrowCircular.png' alt='Arrow Circular' loading='lazy' />
+							<ImageStar src='/Logo/starVector.png' alt='Start Vector' loading='lazy' />
 
 							<ButtonWrapper>
 								<BlackButton>
 									Watch Video
 									<ButtonBox>
-										<ButtonIcon src='/Logo/BlackPlayButton.png' alt='Arrow Icon' />
+										<ButtonIcon src='/Logo/BlackPlayButton.png' alt='Arrow Icon' loading='lazy' />
 									</ButtonBox>
 								</BlackButton>
 							</ButtonWrapper>

@@ -6,7 +6,22 @@ import GreenButton from "../GreenButton";
 
 // style components
 const Container = styled.section`
+	/* position */
+	position: relative;
+	z-index: 0;
+	/* padding */
 	padding-block: 5rem;
+`;
+
+const ImageBg = styled.img`
+	/* position */
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	/* size */
+	width: 100%;
+	height: 100%;
 `;
 
 const Wrapper = styled.div`
@@ -28,13 +43,18 @@ const TextWrapper = styled.div`
 `;
 
 const Header = styled.h2`
+	/* position */
+	position: relative;
+	z-index: 0;
+	/* font */
 	font-size: 2.2rem;
 	font-style: normal;
 	font-weight: 400;
 	text-transform: capitalize;
 	line-height: 1.5;
 	/* margin */
-	margin-bottom: 4rem;
+	max-width: 50%;
+	margin: 0 auto 4rem auto;
 
 	@media (max-width: 600px) {
 		font-size: 2rem;
@@ -45,6 +65,13 @@ const Header = styled.h2`
 	}
 `;
 
+const VectorImage = styled.img`
+	/* position */
+	position: absolute;
+	top: -20%;
+	left: 75%;
+`;
+
 const ButtonBox = styled.span`
 	text-align: center;
 	margin: auto;
@@ -53,12 +80,14 @@ const ButtonBox = styled.span`
 export default function Banner() {
 	return (
 		<Container>
+			<ImageBg src='/Props/GroupPattern.png' alt='Group Pattern Vector' loading='lazy' />
 			<Wrapper>
 				<TextWrapper>
 					<Header>
 						Free to use for personal use and
 						<br />
 						optimised for learning
+						<VectorImage src='/Logo/Vector.png' alt='Header Vector' loading='lazy' />
 					</Header>
 					<ButtonBox>
 						<GreenButton>Get Started</GreenButton>

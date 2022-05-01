@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
 			<Html lang='en'>
 				<Head>
 					{/* favicon */}
-					{/* <link rel='icon' href='/FDINDFavicon.ico' /> */}
+					<link rel='icon' href='/Logo/CodeBookLogo.png' />
 					{/* font type */}
 					<link rel='preconnect' href='https://fonts.googleapis.com' />
 					<link rel='preconnect' href='https://fonts.gstatic.com' />

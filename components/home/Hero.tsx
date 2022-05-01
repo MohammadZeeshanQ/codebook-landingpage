@@ -50,7 +50,7 @@ const rotate = keyframes`
 
 const ImageShadow = styled.img`
 	position: absolute;
-	top: -5%;
+	top: 0;
 	left: -25%;
 	z-index: -1;
 	animation: ${rotate} 4s linear infinite;
