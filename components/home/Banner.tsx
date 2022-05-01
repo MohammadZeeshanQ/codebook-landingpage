@@ -109,7 +109,7 @@ const ButtonBox = styled.span`
 
 export default function Banner() {
 	return (
-		<Container>
+		<Container id='Banner_Section'>
 			<ImageBg src='/Props/GroupPattern.png' alt='Group Pattern Vector' loading='lazy' />
 			<Wrapper>
 				<TextWrapper>

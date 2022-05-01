@@ -231,7 +231,7 @@ const ButtonIcon = styled.img`
 
 function Hero() {
 	return (
-		<Container>
+		<Container id='Home_Section'>
 			<Wrapper>
 				<Grid container alignItems='center' justifyContent='space-between'>
 					<Grid item xs={12} sm={6} md={6}>

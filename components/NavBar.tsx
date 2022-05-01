@@ -189,18 +189,18 @@ const NavBar: FC = () => {
 						</Link>
 
 						<DesktopWrapper>
-							<ButtonLink href='/'>
+							<ButtonLink href='#Home_Section'>
 								<DesktopButton>Home</DesktopButton>
 							</ButtonLink>
 
-							<ButtonLink>
+							<ButtonLink href='#Function_Section'>
 								<DesktopButton>How to Import</DesktopButton>
 							</ButtonLink>
 
-							<ButtonLink>
+							<ButtonLink href='#Services_Section'>
 								<DesktopButton>Features</DesktopButton>
 							</ButtonLink>
-							<ButtonLink>
+							<ButtonLink href='#Banner_Section'>
 								<DesktopButton>How to Save</DesktopButton>
 							</ButtonLink>
 						</DesktopWrapper>
@@ -233,25 +233,25 @@ const NavBar: FC = () => {
 							</ListItem>
 							<Divider />
 							<ListItem>
-								<MobileButtonLink href='/'>
+								<MobileButtonLink href='#Home_Section'>
 									<MobileButton onClick={drawerHandlerClose}>Home</MobileButton>
 								</MobileButtonLink>
 							</ListItem>
 							<Divider />
 							<ListItem>
-								<MobileButtonLink href='/'>
+								<MobileButtonLink href='#Function_Section'>
 									<MobileButton onClick={drawerHandlerClose}>How to Import</MobileButton>
 								</MobileButtonLink>
 							</ListItem>
 							<Divider />
 							<ListItem>
-								<MobileButtonLink href='/'>
+								<MobileButtonLink href='#Services_Section'>
 									<MobileButton onClick={drawerHandlerClose}>Features</MobileButton>
 								</MobileButtonLink>
 							</ListItem>
 							<Divider />
 							<ListItem>
-								<MobileButtonLink href='/'>
+								<MobileButtonLink href='#Banner_Section'>
 									<MobileButton onClick={drawerHandlerClose}>How to Save</MobileButton>
 								</MobileButtonLink>
 							</ListItem>

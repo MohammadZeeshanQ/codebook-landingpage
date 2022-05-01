@@ -152,45 +152,45 @@ const Footer = () => {
 	const bottomNavigationData = [
 		{
 			title: "About",
-			link: "#About",
+			link: "#Home_Section",
 		},
 		{
 			title: "How To Import",
-			link: "#How To Import",
+			link: "#Function_Section",
 		},
 		{
 			title: "Features",
-			link: "#Features",
+			link: "#Services_Section",
 		},
 		{
 			title: "How To Save",
-			link: "#How To Save",
+			link: "#Banner_Section",
 		},
 		{
 			title: "Support",
-			link: "#Support",
+			link: "/",
 		},
 	];
 
 	const bottomSocialMediaData = [
 		{
 			title: "Codebook Twitter",
-			link: "#About",
+			link: "/",
 			image: "/SocialMedia/Twitter.png",
 		},
 		{
 			title: "Codebook Facebook",
-			link: "#How To Import",
+			link: "/",
 			image: "/SocialMedia/Facebook.png",
 		},
 		{
 			title: "Codebook Instagram",
-			link: "#Features",
+			link: "/",
 			image: "/SocialMedia/Instagram.png",
 		},
 		{
 			title: "Codebook Github",
-			link: "#How To Save",
+			link: "/",
 			image: "/SocialMedia/Github.png",
 		},
 	];
@@ -212,7 +212,9 @@ const Footer = () => {
 					<BottomNavigationWrapper>
 						{bottomNavigationData.map((item, id) => (
 							<BottomNavigationBox key={id}>
-								<BottomNavigationText>{item.title}</BottomNavigationText>
+								<Link href={item.link} passHref>
+									<BottomNavigationText>{item.title}</BottomNavigationText>
+								</Link>
 							</BottomNavigationBox>
 						))}
 					</BottomNavigationWrapper>
@@ -220,7 +222,9 @@ const Footer = () => {
 					<SocialIconWrapper>
 						{bottomSocialMediaData.map((item, id) => (
 							<SocialIconBox key={id}>
-								<SocialIconImage src={item.image} alt={item.title} />
+								<Link href={item.link} passHref>
+									<SocialIconImage src={item.image} alt={item.title} />
+								</Link>
 							</SocialIconBox>
 						))}
 					</SocialIconWrapper>
@@ -233,10 +237,14 @@ const Footer = () => {
 					</CopyRightWrapper>
 					<LinksWrapper>
 						<LinksBox>
-							<LinksText>Privacy Policy</LinksText>
+							<Link href='/' passHref>
+								<LinksText>Privacy Policy</LinksText>
+							</Link>
 						</LinksBox>
 						<LinksBox>
-							<LinksText>Terms & Conditions</LinksText>
+							<Link href='/' passHref>
+								<LinksText>Terms & Conditions</LinksText>
+							</Link>
 						</LinksBox>
 					</LinksWrapper>
 				</CopyRightMainContainer>

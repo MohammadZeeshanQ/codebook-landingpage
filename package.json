@@ -1,31 +1,31 @@
 {
-  "name": "codebook-landingpage",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "@mui/icons-material": "^5.6.2",
-    "@mui/material": "^5.6.3",
-    "@mui/styled-engine-sc": "^5.6.1",
-    "@types/styled-components": "^5.1.25",
-    "next": "12.1.5",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "styled-components": "^5.3.5"
-  },
-  "devDependencies": {
-    "@types/node": "17.0.30",
-    "@types/react": "18.0.8",
-    "@types/react-dom": "18.0.3",
-    "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5",
-    "typescript": "4.6.4"
-  }
+	"name": "codebook-landingpage",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build && next export",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.9.0",
+		"@emotion/styled": "^11.8.1",
+		"@mui/icons-material": "^5.6.2",
+		"@mui/material": "^5.6.3",
+		"@mui/styled-engine-sc": "^5.6.1",
+		"@types/styled-components": "^5.1.25",
+		"next": "12.1.5",
+		"react": "18.1.0",
+		"react-dom": "18.1.0",
+		"styled-components": "^5.3.5"
+	},
+	"devDependencies": {
+		"@types/node": "17.0.30",
+		"@types/react": "18.0.8",
+		"@types/react-dom": "18.0.3",
+		"eslint": "8.14.0",
+		"eslint-config-next": "12.1.5",
+		"typescript": "4.6.4"
+	}
 }

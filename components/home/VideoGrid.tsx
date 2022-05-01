@@ -172,7 +172,7 @@ const ButtonIcon = styled.img`
 
 export default function VideoGrid() {
 	return (
-		<Container>
+		<Container id='VideoGrid_Section'>
 			<Wrapper>
 				<Grid container alignItems='center' justifyContent='space-around'>
 					<Grid item xs={12} sm={5} md={5}>

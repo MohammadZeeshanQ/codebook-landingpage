@@ -145,7 +145,7 @@ const ButtonWrapper = styled.div`
 
 export default function FirstGrid() {
 	return (
-		<Container>
+		<Container id='FirstGrid_Section'>
 			<Wrapper>
 				<Grid container alignItems='center' justifyContent='space-around' direction='row'>
 					<Grid item xs={12} sm={6} md={6}>

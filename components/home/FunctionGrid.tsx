@@ -134,7 +134,7 @@ const ButtonWrapper = styled.div`
 
 export default function FunctionGrid() {
 	return (
-		<Container>
+		<Container id='Function_Section'>
 			<Wrapper>
 				<Grid container alignItems='center' justifyContent='space-around' direction='row-reverse'>
 					<Grid item xs={12} sm={6} md={6}>
