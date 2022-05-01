@@ -4,7 +4,14 @@ import { Grid } from "@mui/material";
 
 // styled-components
 const Container = styled.section`
-	padding-block: 4rem;
+	padding-block: 8rem;
+
+	@media (max-width: 600px) {
+		padding: 8rem 0 2rem 0;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		padding: 8rem 0 6rem 0;
+	}
 `;
 
 const Wrapper = styled.div`
@@ -21,6 +28,10 @@ const Wrapper = styled.div`
 const ImageWrapper = styled.div`
 	position: relative;
 	z-index: 0;
+
+	@media (max-width: 600px) {
+		margin-top: 4rem;
+	}
 `;
 
 const ImageContent = styled.img`
@@ -53,13 +64,15 @@ const ImageShadow = styled.img`
 	top: 0;
 	left: -25%;
 	z-index: -1;
-	animation: ${rotate} 4s linear infinite;
+	animation: ${rotate} 8s linear infinite;
 
 	@media (max-width: 600px) {
 		top: -50%;
 		left: -50%;
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {
+		top: -60%;
+		left: -70%;
 	}
 `;
 
@@ -153,7 +166,7 @@ const GreenButton = styled.button`
 	letter-spacing: 1px;
 	cursor: pointer;
 	/* padding */
-	padding: 1.1rem 2.2rem;
+	padding: 1rem 2rem;
 
 	@media (max-width: 600px) {
 		margin-left: 0;
@@ -181,7 +194,7 @@ const WhiteButton = styled.button`
 	letter-spacing: 1px;
 	cursor: pointer;
 	/* padding & marign */
-	padding: 1rem 2.2rem;
+	padding: 0.9rem 2rem;
 	margin-left: 1.5rem;
 	/* border */
 	border: 2px solid var(--SecondColor);

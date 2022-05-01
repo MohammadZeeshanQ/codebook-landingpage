@@ -4,7 +4,14 @@ import { Grid } from "@mui/material";
 
 // styled -components
 const Container = styled.section`
-	padding-block: 3rem;
+	padding-block: 5rem;
+
+	@media (max-width: 600px) {
+		padding-block: 2rem;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		padding-block: 2rem;
+	}
 `;
 
 const Wrapper = styled.div`
@@ -57,6 +64,10 @@ const GreenText = styled.span`
 
 const ImageWrapper = styled.div`
 	padding: 2rem;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		padding: 1rem;
+	}
 `;
 
 const ImageContent = styled.img`

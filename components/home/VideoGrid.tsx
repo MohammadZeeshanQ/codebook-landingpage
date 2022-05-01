@@ -132,6 +132,9 @@ const ButtonWrapper = styled.div`
 `;
 
 const BlackButton = styled.button`
+	/* position */
+	position: relative;
+	z-index: 2;
 	/* color */
 	color: var(--blackColor);
 	background: 2px solid var(--blackColor);

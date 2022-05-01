@@ -7,7 +7,14 @@ import GreenButton from "../GreenButton";
 
 // styled-components
 const Container = styled.section`
-	padding-block: 3rem;
+	padding-block: 5rem;
+
+	@media (max-width: 600px) {
+		padding-block: 1rem;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		padding-block: 4rem;
+	}
 `;
 
 const Wrapper = styled.div`
@@ -36,11 +43,11 @@ const ImageContent = styled.img`
 
 const rotate = keyframes`
   from {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 `;
 
@@ -49,13 +56,15 @@ const ImageShadow = styled.img`
 	top: -25%;
 	left: -25%;
 	z-index: -1;
-	animation: ${rotate} 4s linear infinite;
+	animation: ${rotate} 8s linear infinite;
 
 	@media (max-width: 600px) {
 		top: -90%;
 		left: -60%;
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {
+		top: -70%;
+		left: -90%;
 	}
 `;
 
@@ -129,6 +138,7 @@ const ButtonWrapper = styled.div`
 		text-align: center;
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {
+		margin-top: 3rem;
 	}
 `;
 

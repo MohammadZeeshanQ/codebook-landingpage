@@ -58,6 +58,7 @@ const Header = styled.h2`
 
 	@media (max-width: 600px) {
 		font-size: 2rem;
+		max-width: 90%;
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {
 		font-size: 1.5rem;

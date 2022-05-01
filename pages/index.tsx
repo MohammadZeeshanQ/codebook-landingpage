@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 
 // Components
 import HeroSection from "../components/home/Hero";
