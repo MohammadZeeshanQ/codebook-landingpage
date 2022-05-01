@@ -21,9 +21,21 @@ const NavigationMainContainer = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	padding-bottom: 4rem;
+
+	@media (max-width: 600px) {
+		display: block;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
-const LogoWrapper = styled.div``;
+const LogoWrapper = styled.div`
+	@media (max-width: 600px) {
+		text-align: center;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
+`;
 
 const LogoImage = styled.img``;
 
@@ -33,11 +45,27 @@ const BottomNavigationWrapper = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	gap: 3rem;
+
+	@media (max-width: 600px) {
+		display: block;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		gap: 0;
+	}
 `;
 
-const BottomNavigationBox = styled.div``;
+const BottomNavigationBox = styled.div`
+	margin-block: 1rem;
+	padding: 1rem;
+`;
 
-const BottomNavigationText = styled.p``;
+const BottomNavigationText = styled.p`
+	cursor: pointer;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSizeSmall);
+	}
+`;
 
 const SocialIconWrapper = styled.div`
 	/* display */
@@ -45,11 +73,27 @@ const SocialIconWrapper = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	gap: 2rem;
+
+	@media (max-width: 600px) {
+		max-width: 70%;
+		margin: auto;
+		padding-block: 2rem;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		gap: 1rem;
+	}
 `;
 
 const SocialIconBox = styled.div``;
 
-const SocialIconImage = styled.img``;
+const SocialIconImage = styled.img`
+	cursor: pointer;
+
+	@media (max-width: 600px) {
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
+`;
 
 // Copyright with Year and Policies
 const CopyRightMainContainer = styled.div`
@@ -57,12 +101,22 @@ const CopyRightMainContainer = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	gap: 2rem;
+
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
 const CopyRightWrapper = styled.div``;
 
 const CopyRightText = styled.p`
 	opacity: 0.7;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSizeSmall);
+	}
 `;
 
 const LinksWrapper = styled.div`
@@ -78,6 +132,10 @@ const LinksBox = styled.div``;
 const LinksText = styled.p`
 	opacity: 0.7;
 	cursor: pointer;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSizeSmall);
+	}
 `;
 
 const Footer = () => {
