@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { Grid } from "@mui/material";
 
 // styled -components
-const Container = styled.section``;
+const Container = styled.section`
+	padding-block: 3rem;
+`;
 
 const Wrapper = styled.div`
 	max-width: 80%;
@@ -21,7 +23,14 @@ const HeaderWrapper = styled.div`
 	color: var(--SecondColor);
 	max-width: 40%;
 	text-align: center;
-	margin: auto;
+	margin: 1rem auto 4rem auto;
+
+	@media (max-width: 600px) {
+		max-width: 95%;
+		text-align: center;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
 const HeaderText = styled.h2`
@@ -32,18 +41,36 @@ const HeaderText = styled.h2`
 	line-height: 1.5;
 	/* margin */
 	margin-bottom: 2rem;
+
+	@media (max-width: 600px) {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: 1.4rem;
+	}
 `;
 
 const GreenText = styled.span`
 	color: var(--MainColor);
 `;
 
-const ImageWrapper = styled.div``;
+const ImageWrapper = styled.div`
+	padding: 1rem;
+`;
 
 const ImageContent = styled.img`
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+
+	&:hover {
+		box-shadow: 5px 9px 29px -2px rgba(130, 129, 129, 0.61);
+		-webkit-box-shadow: 5px 9px 29px -2px rgba(130, 129, 129, 0.61);
+		-moz-box-shadow: 5px 9px 29px -2px rgba(130, 129, 129, 0.61);
+		transform: scale(1.05);
+		transition: transform 0.4s ease-in-out;
+	}
 `;
 
 export default function Services() {
@@ -73,7 +100,7 @@ export default function Services() {
 
 				<Grid container alignItems='center' justifyContent='space-around'>
 					{servicesData.map((item, id) => (
-						<Grid key={id} xs={12} sm={4} md={4}>
+						<Grid key={id} item xs={12} sm={4} md={4}>
 							<ImageWrapper>
 								<ImageContent src={item.image} alt={item.title} />
 							</ImageWrapper>

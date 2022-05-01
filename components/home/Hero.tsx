@@ -12,10 +12,9 @@ const Wrapper = styled.div`
 	margin: auto;
 
 	@media (max-width: 600px) {
-		max-width: 95%;
+		max-width: 90%;
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {
-		max-width: 90%;
 	}
 `;
 // Image Style
@@ -36,7 +35,6 @@ const ImageContent = styled.img`
 		left: 0;
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {
-		max-width: 90%;
 	}
 `;
 
@@ -56,6 +54,13 @@ const ImageShadow = styled.img`
 	left: -25%;
 	z-index: -1;
 	animation: ${rotate} 4s linear infinite;
+
+	@media (max-width: 600px) {
+		top: -50%;
+		left: -50%;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
 // Text Style
@@ -75,6 +80,14 @@ const HeaderText = styled.h2`
 	line-height: 1.5;
 	/* margin */
 	margin-bottom: 2rem;
+
+	@media (max-width: 600px) {
+		font-size: 2rem;
+		text-align: center;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: 1.6rem;
+	}
 `;
 
 const GreenText = styled.span`
@@ -84,6 +97,14 @@ const GreenText = styled.span`
 const DescriptionBox = styled.div`
 	border-left: 2px solid var(--MainColor);
 	padding-left: 1rem;
+
+	@media (max-width: 600px) {
+		border: none;
+		text-align: center;
+		padding-left: 0;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
 const DescriptionText = styled.p`
@@ -92,6 +113,10 @@ const DescriptionText = styled.p`
 	opacity: 0.8;
 	line-height: 2;
 	letter-spacing: 0.5px;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSize);
+	}
 `;
 
 const ButtonWrapper = styled.div`
@@ -100,6 +125,13 @@ const ButtonWrapper = styled.div`
 	align-items: center;
 	/* margin */
 	margin-top: 5rem;
+
+	@media (max-width: 600px) {
+		flex-direction: column;
+		margin-top: 4rem;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
 const ButtonBox = styled.span`
@@ -122,6 +154,16 @@ const GreenButton = styled.button`
 	cursor: pointer;
 	/* padding */
 	padding: 1.1rem 2.2rem;
+
+	@media (max-width: 600px) {
+		margin-left: 0;
+		margin-top: 1.5rem;
+		padding: 1.5rem 2.6rem;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSize);
+		padding: 0.6rem 1rem;
+	}
 `;
 
 const WhiteButton = styled.button`
@@ -143,6 +185,16 @@ const WhiteButton = styled.button`
 	margin-left: 1.5rem;
 	/* border */
 	border: 2px solid var(--SecondColor);
+
+	@media (max-width: 600px) {
+		margin-left: 0;
+		margin-top: 1.5rem;
+		padding: 1.5rem 2.6rem;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSize);
+		padding: 0.6rem 1rem;
+	}
 `;
 
 const ButtonIcon = styled.img`

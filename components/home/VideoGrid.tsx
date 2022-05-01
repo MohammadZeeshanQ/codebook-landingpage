@@ -23,6 +23,9 @@ const Wrapper = styled.div`
 const ImageWrapper = styled.div`
 	height: 100%;
 	background: linear-gradient(94.25deg, #3dc9b0 0%, #5dd39e 100%);
+	/* position */
+	position: relative;
+	z-index: 0;
 	/* padding */
 	padding: 2rem;
 	/* border radius */
@@ -31,15 +34,39 @@ const ImageWrapper = styled.div`
 
 const ImageContent = styled.img``;
 
-const ImageShadow = styled.img``;
+const ImageArrow = styled.img`
+	/* position */
+	position: absolute;
+	bottom: 0%;
+	right: 2%;
+`;
+
+const ImageStar = styled.img`
+	/* position */
+	position: absolute;
+	top: 20%;
+	left: -5.5%;
+`;
 
 // Text Style
 const TextWrapper = styled.div`
 	color: var(--SecondColor);
+
+	@media (max-width: 600px) {
+		padding-top: 4rem;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
 const TextBox = styled.div`
 	padding-block: 1rem;
+
+	@media (max-width: 600px) {
+		padding: 1rem;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
 const HeaderText = styled.h2`
@@ -50,6 +77,14 @@ const HeaderText = styled.h2`
 	line-height: 1.5;
 	/* margin */
 	margin-bottom: 2rem;
+
+	@media (max-width: 600px) {
+		text-align: center;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+	}
 `;
 
 const GreenText = styled.span`
@@ -64,12 +99,21 @@ const DescriptionHeaderText = styled.h3`
 	letter-spacing: 1px;
 	/* margin */
 	margin-bottom: 0.5rem;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: 0.8rem;
+	}
 `;
 
 const DescriptionText = styled.p`
+	font-size: 0.9rem;
 	opacity: 0.8;
 	line-height: 2;
 	letter-spacing: 0.5px;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSizeSmall);
+	}
 `;
 
 const ButtonWrapper = styled.div`
@@ -96,13 +140,22 @@ const BlackButton = styled.button`
 	margin: auto;
 	/* border */
 	border: 2px solid var(--blackColor);
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSizeSmall);
+		padding: 0.5rem 1rem;
+	}
 `;
 
 const ButtonBox = styled.span`
 	margin-left: 0.5rem;
 `;
 
-const ButtonIcon = styled.img``;
+const ButtonIcon = styled.img`
+	@media (min-width: 601px) and (max-width: 1024px) {
+		width: 0.6rem;
+	}
+`;
 
 export default function VideoGrid() {
 	return (
@@ -112,6 +165,9 @@ export default function VideoGrid() {
 					<Grid item xs={12} sm={5} md={5}>
 						<ImageWrapper>
 							<ImageContent src='/Props/BlackPlayButton.png' alt='Codebook Video' />
+							<ImageArrow src='/Logo/ArrowCircular.png' alt='Arrow Circular' />
+							<ImageStar src='/Logo/starVector.png' alt='Start Vector' />
+
 							<ButtonWrapper>
 								<BlackButton>
 									Watch Video

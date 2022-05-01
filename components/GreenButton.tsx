@@ -14,6 +14,11 @@ const Button = styled.button`
 	cursor: pointer;
 	/* padding */
 	padding: 1.1rem 2.2rem;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSizeSmall);
+		padding: 0.8rem 1.5rem;
+	}
 `;
 
 type ButtonProps = PropsWithChildren<{}>;

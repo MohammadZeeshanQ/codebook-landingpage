@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 	margin: auto;
 
 	@media (max-width: 600px) {
-		max-width: 95%;
+		max-width: 90%;
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {
 		max-width: 90%;
@@ -50,6 +50,13 @@ const ImageShadow = styled.img`
 	left: -15%;
 	z-index: -1;
 	animation: ${rotate} 4s linear infinite;
+
+	@media (max-width: 600px) {
+		top: -90%;
+		left: -45%;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
 // Text Style
@@ -69,6 +76,15 @@ const HeaderText = styled.h2`
 	line-height: 1.5;
 	/* margin */
 	margin-bottom: 2rem;
+
+	@media (max-width: 600px) {
+		font-size: 2rem;
+		text-align: center;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+	}
 `;
 
 const GreenText = styled.span`
@@ -92,10 +108,20 @@ const DescriptionText = styled.p`
 	opacity: 0.8;
 	line-height: 1.5;
 	letter-spacing: 0.5px;
+
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: var(--TabletFontSizeSmall);
+	}
 `;
 
 const ButtonWrapper = styled.div`
 	margin-top: 4rem;
+
+	@media (max-width: 600px) {
+		text-align: center;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+	}
 `;
 
 export default function FunctionGrid() {

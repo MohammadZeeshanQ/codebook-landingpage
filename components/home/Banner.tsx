@@ -32,9 +32,17 @@ const Header = styled.h2`
 	font-style: normal;
 	font-weight: 400;
 	text-transform: capitalize;
-	line-height: 1.3;
+	line-height: 1.5;
 	/* margin */
 	margin-bottom: 4rem;
+
+	@media (max-width: 600px) {
+		font-size: 2rem;
+	}
+	@media (min-width: 601px) and (max-width: 1024px) {
+		font-size: 1.5rem;
+		margin-bottom: 3rem;
+	}
 `;
 
 const ButtonBox = styled.span`
