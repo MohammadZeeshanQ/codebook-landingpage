@@ -19,8 +19,8 @@ const Button = styled.button`
 	padding: 1.1rem 2.2rem;
 
 	&:hover {
-		transform: scale(1.03);
-		transition: transform 0.25s ease-in-out;
+		background: #6ce9b1;
+		transition: transform 0.3s ease-in-out;
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {
 		font-size: var(--TabletFontSizeSmall);

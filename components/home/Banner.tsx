@@ -13,29 +13,6 @@ const Container = styled.section`
 	padding-block: 5rem;
 `;
 
-const opacity = keyframes`
-  0% {
-	top: 0;
-	left: 0;
-  }
-
-  30% {
-	top: -20%;
-	left: 0;
-  }
-
-  60% {
-	bottom: -20%;
-	left: 0;
-  }
-
-
-  100% {
-	top: 0;
-	left: 0;
-  }
-`;
-
 const ImageBg = styled.img`
 	/* position */
 	position: absolute;
@@ -45,8 +22,6 @@ const ImageBg = styled.img`
 	/* size */
 	width: 100%;
 	height: 100%;
-	/* animation */
-	animation: ${opacity} 6s linear infinite;
 `;
 
 const Wrapper = styled.div`

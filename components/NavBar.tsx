@@ -117,6 +117,10 @@ const CTAButtonTheme = styled.button`
 	/* padding */
 	padding: 0.8rem 2rem;
 
+	&:hover {
+		background: #6ce9b1;
+		transition: transform 0.3s ease-in-out;
+	}
 	@media (min-width: 601px) and (max-width: 1024px) {
 		font-size: var(--TabletFontSizeSmall);
 		padding: 0.8rem 1.5rem;
@@ -125,10 +129,10 @@ const CTAButtonTheme = styled.button`
 
 const DesktopButton = styled(ButtonTheme)`
 	color: var(--whiteColor);
-	opacity: 0.7;
+	opacity: 0.8;
 
 	&:hover {
-		opacity: 1;
+		color: var(--MainColor);
 		transition: all 0.2s ease-in-out;
 	}
 `;

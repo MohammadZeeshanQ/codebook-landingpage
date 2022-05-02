@@ -154,6 +154,10 @@ const BlackButton = styled.button`
 	/* border */
 	border: 2px solid var(--blackColor);
 
+	&:hover {
+		opacity: 0.7;
+		transition: all 0.25s ease-in-out;
+	}
 	@media (min-width: 601px) and (max-width: 1024px) {
 		font-size: var(--TabletFontSizeSmall);
 		padding: 0.5rem 1rem;

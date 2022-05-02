@@ -172,8 +172,8 @@ const GreenButton = styled.button`
 	padding: 1rem 2rem;
 
 	&:hover {
-		transform: scale(1.03);
-		transition: transform 0.25s ease-in-out;
+		background: #6ce9b1;
+		transition: transform 0.3s ease-in-out;
 	}
 	@media (max-width: 600px) {
 		margin-left: 0;
@@ -210,8 +210,8 @@ const WhiteButton = styled.button`
 	border: 2px solid var(--SecondColor);
 
 	&:hover {
-		transform: scale(1.03);
-		transition: transform 0.25s ease-in-out;
+		opacity: 0.7;
+		transition: all 0.25s ease-in-out;
 	}
 	@media (max-width: 600px) {
 		margin-left: 0;
