@@ -79,11 +79,16 @@ const ImageContent = styled.img`
 	width: 100%;
 	object-fit: cover;
 	border-radius: 1rem;
+	/* opacity */
+	opacity: 0.8;
 
 	&:hover {
-		box-shadow: 4px 4px 20px #778899;
-		transform: scale(1.05);
-		transition: all 0.35s ease-in-out;
+		/* WebFlow Animation */
+		transform: translateY(-10px);
+		opacity: 1;
+		/* shadow  */
+		box-shadow: 0 10px 15px #474747;
+		transition: all 0.3s ease-in-out;
 	}
 `;
 
