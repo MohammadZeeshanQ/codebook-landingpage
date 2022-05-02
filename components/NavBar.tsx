@@ -132,8 +132,8 @@ const DesktopButton = styled(ButtonTheme)`
 	opacity: 0.8;
 
 	&:hover {
-		color: var(--MainColor);
-		transition: all 0.2s ease-in-out;
+		color: #6ce9b1;
+		transition: all 0.3s ease-in-out;
 	}
 `;
 
