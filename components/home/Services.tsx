@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styled from "styled-components";
 import { Grid } from "@mui/material";
 
@@ -79,15 +80,17 @@ const ImageContent = styled.img`
 	width: 100%;
 	object-fit: cover;
 	border-radius: 1rem;
+	cursor: pointer;
 	/* opacity */
-	opacity: 0.6;
+	opacity: 0.7;
 
 	&:hover {
 		/* WebFlow Animation */
-		transform: translateY(-15px);
-		opacity: 1;
+		/* transform: translateY(-15px); */
 		/* shadow  */
-		box-shadow: 0 10px 15px #474747;
+		/* box-shadow: 0 10px 15px #474747; */
+		transform: scale(1.03);
+		opacity: 1;
 		transition: all 0.3s ease-in-out;
 	}
 `;
@@ -121,7 +124,9 @@ export default function Services() {
 					{servicesData.map((item, id) => (
 						<Grid key={id} item xs={12} sm={4} md={4}>
 							<ImageWrapper>
+								{/* <Link passHref> */}
 								<ImageContent src={item.image} alt={item.title} />
+								{/* </Link> */}
 							</ImageWrapper>
 						</Grid>
 					))}
