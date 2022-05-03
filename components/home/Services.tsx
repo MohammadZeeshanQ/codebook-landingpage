@@ -84,7 +84,7 @@ const ImageContent = styled.img`
 
 	&:hover {
 		/* WebFlow Animation */
-		transform: translateY(-10px);
+		transform: translateY(-15px);
 		opacity: 1;
 		/* shadow  */
 		box-shadow: 0 10px 15px #474747;

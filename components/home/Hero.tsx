@@ -158,6 +158,7 @@ const GreenButton = styled.button`
 	/* color */
 	color: var(--SecondColor);
 	background: linear-gradient(94.25deg, #3dc9b0 0%, #5dd39e 100%);
+	border: none;
 	border-radius: 2rem;
 	/* display */
 	display: flex;
@@ -172,8 +173,8 @@ const GreenButton = styled.button`
 	padding: 1rem 2rem;
 
 	&:hover {
-		background: #6ce9b1;
-		transition: transform 0.3s ease-in-out;
+		background: linear-gradient(94.25deg, #52f4d6 0%, #5dd39e 100%);
+		transition: background 0.2s ease-out;
 	}
 	@media (max-width: 600px) {
 		margin-left: 0;
@@ -209,10 +210,6 @@ const WhiteButton = styled.button`
 	/* border */
 	border: 2px solid var(--SecondColor);
 
-	&:hover {
-		opacity: 0.7;
-		transition: all 0.25s ease-in-out;
-	}
 	@media (max-width: 600px) {
 		margin-left: 0;
 		margin-top: 1.5rem;
