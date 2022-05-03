@@ -197,16 +197,11 @@ const NavBar: FC = () => {
 							<ButtonLink href='#Home_Section'>
 								<DesktopButton>Home</DesktopButton>
 							</ButtonLink>
-
-							<ButtonLink href='#Function_Section'>
-								<DesktopButton>How to Import</DesktopButton>
-							</ButtonLink>
-
 							<ButtonLink href='#Services_Section'>
 								<DesktopButton>Features</DesktopButton>
 							</ButtonLink>
-							<ButtonLink href='#Banner_Section'>
-								<DesktopButton>How to Save</DesktopButton>
+							<ButtonLink href='#Function_Section'>
+								<DesktopButton>How To Save Your Codebook and Free</DesktopButton>
 							</ButtonLink>
 						</DesktopWrapper>
 
@@ -244,20 +239,16 @@ const NavBar: FC = () => {
 							</ListItem>
 							<Divider />
 							<ListItem>
-								<MobileButtonLink href='#Function_Section'>
-									<MobileButton onClick={drawerHandlerClose}>How to Import</MobileButton>
-								</MobileButtonLink>
-							</ListItem>
-							<Divider />
-							<ListItem>
 								<MobileButtonLink href='#Services_Section'>
 									<MobileButton onClick={drawerHandlerClose}>Features</MobileButton>
 								</MobileButtonLink>
 							</ListItem>
 							<Divider />
 							<ListItem>
-								<MobileButtonLink href='#Banner_Section'>
-									<MobileButton onClick={drawerHandlerClose}>How to Save</MobileButton>
+								<MobileButtonLink href='#Function_Section'>
+									<MobileButton onClick={drawerHandlerClose}>
+										How To Save Your Codebook and Free
+									</MobileButton>
 								</MobileButtonLink>
 							</ListItem>
 						</List>

@@ -155,43 +155,30 @@ const Footer = () => {
 			link: "#Home_Section",
 		},
 		{
-			title: "How To Import",
-			link: "#Function_Section",
-		},
-		{
 			title: "Features",
 			link: "#Services_Section",
 		},
 		{
-			title: "How To Save",
-			link: "#Banner_Section",
-		},
-		{
-			title: "Support",
-			link: "/",
+			title: "How To Save Your Codebook and Free",
+			link: "#Function_Section",
 		},
 	];
 
 	const bottomSocialMediaData = [
 		{
-			title: "Codebook Twitter",
-			link: "/",
-			image: "/SocialMedia/Twitter.png",
-		},
-		{
-			title: "Codebook Facebook",
-			link: "/",
-			image: "/SocialMedia/Facebook.png",
-		},
-		{
-			title: "Codebook Instagram",
-			link: "/",
-			image: "/SocialMedia/Instagram.png",
+			title: "Codebook Email",
+			link: "mailto:raveenseshan@live.com",
+			image: "/SocialMedia/EmailIcon.png",
 		},
 		{
 			title: "Codebook Github",
-			link: "/",
-			image: "/SocialMedia/Github.png",
+			link: "https://github.com/Raveen-Senanayake",
+			image: "/SocialMedia/LinkedInIcon.png",
+		},
+		{
+			title: "Codebook Github",
+			link: "https://github.com/Raveen-Senanayake",
+			image: "/SocialMedia/GithubIcon.png",
 		},
 	];
 
