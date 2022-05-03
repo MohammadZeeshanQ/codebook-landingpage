@@ -157,14 +157,13 @@ const MobileButton = styled.button`
 	font-size: 1rem;
 	font-weight: 500;
 	background: transparent;
-	display: flex;
-	justify-content: flex-start;
 	border: none;
 	letter-spacing: 0.5px;
 	margin: 0.5rem 0;
 	padding: 0.5rem 0;
 	width: 100%;
 	cursor: pointer;
+	text-align: left;
 `;
 
 const NavBar: FC = () => {

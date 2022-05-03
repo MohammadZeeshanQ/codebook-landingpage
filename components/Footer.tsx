@@ -76,7 +76,7 @@ const SocialIconWrapper = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 2rem;
+	gap: 1rem;
 
 	@media (max-width: 600px) {
 		max-width: 70%;
@@ -91,6 +91,7 @@ const SocialIconWrapper = styled.div`
 const SocialIconBox = styled.div``;
 
 const SocialIconImage = styled.img`
+	width: 2rem;
 	cursor: pointer;
 
 	&:hover {
@@ -100,6 +101,7 @@ const SocialIconImage = styled.img`
 	@media (max-width: 600px) {
 	}
 	@media (min-width: 601px) and (max-width: 1024px) {
+		width: 1.5rem;
 	}
 `;
 
