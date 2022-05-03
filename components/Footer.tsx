@@ -180,7 +180,7 @@ const Footer = () => {
 		{
 			title: "Codebook Github",
 			link: "https://github.com/Raveen-Senanayake",
-			image: "/SocialMedia/GithubIcon.png",
+			image: "/SocialMedia/GitHubIcon.png",
 		},
 	];
 
