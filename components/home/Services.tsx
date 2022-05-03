@@ -80,7 +80,7 @@ const ImageContent = styled.img`
 	object-fit: cover;
 	border-radius: 1rem;
 	/* opacity */
-	opacity: 0.8;
+	opacity: 0.6;
 
 	&:hover {
 		/* WebFlow Animation */

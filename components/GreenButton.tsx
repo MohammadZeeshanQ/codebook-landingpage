@@ -9,6 +9,7 @@ const Button = styled.button`
 	/* color */
 	color: var(--SecondColor);
 	background: linear-gradient(94.25deg, #3dc9b0 0%, #5dd39e 100%);
+	border: none;
 	border-radius: 2rem;
 	/* font */
 	font-size: 1rem;
