@@ -44,7 +44,7 @@ const BottomNavigationWrapper = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 3rem;
+	gap: 2rem;
 
 	@media (max-width: 600px) {
 		display: block;
