@@ -196,7 +196,7 @@ const NavBar: FC = () => {
 							<ButtonLink href='#Services_Section'>
 								<DesktopButton>Features</DesktopButton>
 							</ButtonLink>
-							<ButtonLink href='#Function_Section'>
+							<ButtonLink href='#VideoGrid_Section'>
 								<DesktopButton>How To Save Your Codebook</DesktopButton>
 							</ButtonLink>
 							<ButtonLink href='#Banner_Section'>
