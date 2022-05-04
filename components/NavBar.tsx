@@ -35,6 +35,7 @@ const LogoImage = styled.img`
 	width: 4.5rem;
 	height: 100%;
 	object-fit: cover;
+	cursor: pointer;
 
 	@media (max-width: 600px) {
 		width: 3.5rem;
@@ -183,11 +184,11 @@ const NavBar: FC = () => {
 			>
 				<Toolbar>
 					<Wrapper>
-						<Link href='/' passHref>
-							<LogoWrapper>
+						<LogoWrapper>
+							<Link href='/' passHref>
 								<LogoImage src='/Logo/CodeBookLogo.png' alt='Codebook Logo' />
-							</LogoWrapper>
-						</Link>
+							</Link>
+						</LogoWrapper>
 
 						<DesktopWrapper>
 							<ButtonLink href='#Home_Section'>
