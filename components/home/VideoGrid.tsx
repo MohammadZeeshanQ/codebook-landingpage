@@ -5,6 +5,8 @@ import { Grid } from "@mui/material";
 // styled-components
 const Container = styled.section`
 	padding-block: 4rem;
+	position: relative;
+	z-index: 0;
 `;
 
 const Wrapper = styled.div`
@@ -25,7 +27,6 @@ const ImageWrapper = styled.div`
 	background: linear-gradient(94.25deg, #3dc9b0 0%, #5dd39e 100%);
 	/* position */
 	position: relative;
-	z-index: 0;
 	/* padding */
 	padding: 2rem;
 	/* border radius */
@@ -37,11 +38,13 @@ const ImageContent = styled.img``;
 const ImageShadow = styled.img`
 	/* position */
 	position: absolute;
-	top: -90%;
-	left: 0;
-	z-index: -1;
+	top: 10%;
+	left: -30%;
+	z-index: -4;
 	/* size */
 	width: 100%;
+	height: 100%;
+	object-fit: contain;
 `;
 
 const ImageArrow = styled.img`
@@ -177,12 +180,13 @@ const ButtonIcon = styled.img`
 export default function VideoGrid() {
 	return (
 		<Container id='VideoGrid_Section'>
+			<ImageShadow src='/Shadow/medium.png' alt='Codebook Video' loading='lazy' />
 			<Wrapper>
 				<Grid container alignItems='center' justifyContent='space-around'>
 					<Grid item xs={12} sm={5} md={5}>
 						<ImageWrapper>
 							<ImageContent src='/Props/BlackPlayButton.png' alt='Codebook Video' />
-							<ImageShadow src='/Shadow/Small.png' alt='Codebook Video' loading='lazy' />
+
 							<ImageArrow src='/Logo/ArrowCircular.png' alt='Arrow Circular' loading='lazy' />
 							<ImageStar src='/Logo/starVector.png' alt='Start Vector' loading='lazy' />
 

@@ -47,7 +47,7 @@ const Header = styled.h2`
 	position: relative;
 	z-index: 0;
 	/* font */
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 	font-style: normal;
 	font-weight: 400;
 	text-transform: capitalize;

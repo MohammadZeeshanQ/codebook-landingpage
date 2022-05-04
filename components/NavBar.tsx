@@ -244,10 +244,8 @@ const NavBar: FC = () => {
 							</ListItem>
 							<Divider />
 							<ListItem>
-								<MobileButtonLink href='#Function_Section'>
-									<MobileButton onClick={drawerHandlerClose}>
-										How To Save Your Codebook and Free
-									</MobileButton>
+								<MobileButtonLink href='#VideoGrid_Section'>
+									<MobileButton onClick={drawerHandlerClose}>How To Save Your Codebook</MobileButton>
 								</MobileButtonLink>
 							</ListItem>
 							<ListItem>
