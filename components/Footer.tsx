@@ -161,8 +161,12 @@ const Footer = () => {
 			link: "#Services_Section",
 		},
 		{
-			title: "How To Save Your Codebook and Free",
+			title: "How To Save Your Codebook",
 			link: "#Function_Section",
+		},
+		{
+			title: "Free",
+			link: "#Banner_Section",
 		},
 	];
 

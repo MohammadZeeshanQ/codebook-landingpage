@@ -7,9 +7,6 @@ import { AppBar, Toolbar, Divider, SwipeableDrawer, List, ListItem, IconButton }
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
-// Shared components
-import GreenButton from "./GreenButton";
-
 // styled components
 const MainContainer = styled.section`
 	position: relative;
@@ -200,7 +197,10 @@ const NavBar: FC = () => {
 								<DesktopButton>Features</DesktopButton>
 							</ButtonLink>
 							<ButtonLink href='#Function_Section'>
-								<DesktopButton>How To Save Your Codebook and Free</DesktopButton>
+								<DesktopButton>How To Save Your Codebook</DesktopButton>
+							</ButtonLink>
+							<ButtonLink href='#Banner_Section'>
+								<DesktopButton>Free</DesktopButton>
 							</ButtonLink>
 						</DesktopWrapper>
 
@@ -248,6 +248,11 @@ const NavBar: FC = () => {
 									<MobileButton onClick={drawerHandlerClose}>
 										How To Save Your Codebook and Free
 									</MobileButton>
+								</MobileButtonLink>
+							</ListItem>
+							<ListItem>
+								<MobileButtonLink href='#Banner_Section'>
+									<MobileButton onClick={drawerHandlerClose}>Free</MobileButton>
 								</MobileButtonLink>
 							</ListItem>
 						</List>
