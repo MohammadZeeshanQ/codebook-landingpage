@@ -45,6 +45,11 @@ const ImageShadow = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+
+	@media (max-width: 600px) {
+		top: -25%;
+		left: -10%;
+	}
 `;
 
 const ImageArrow = styled.img`
@@ -185,8 +190,7 @@ export default function VideoGrid() {
 				<Grid container alignItems='center' justifyContent='space-around'>
 					<Grid item xs={12} sm={5} md={5}>
 						<ImageWrapper>
-							<ImageContent src='/Props/BlackPlayButton.png' alt='Codebook Video' />
-
+							<ImageContent src='' alt='Codebook Video' />
 							<ImageArrow src='/Logo/ArrowCircular.png' alt='Arrow Circular' loading='lazy' />
 							<ImageStar src='/Logo/starVector.png' alt='Start Vector' loading='lazy' />
 

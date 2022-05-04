@@ -183,7 +183,7 @@ const NavBar: FC = () => {
 			>
 				<Toolbar>
 					<Wrapper>
-						<Link href='' passHref>
+						<Link href='/' passHref>
 							<LogoWrapper>
 								<LogoImage src='/Logo/CodeBookLogo.png' alt='Codebook Logo' />
 							</LogoWrapper>
