@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styled, { keyframes } from "styled-components";
 import { Grid } from "@mui/material";
 
@@ -245,18 +246,23 @@ function Hero() {
 									</DescriptionText>
 								</DescriptionBox>
 								<ButtonWrapper>
-									<GreenButton>
-										Get Started&nbsp;
-										<ButtonBox>
-											<ButtonIcon src='/Logo/ArrowIcon.png' alt='Arrow Icon' />
-										</ButtonBox>
-									</GreenButton>
-									<WhiteButton>
-										Watch Video
-										<ButtonBox>
-											<ButtonIcon src='/Logo/PlayIcon.png' alt='Play Icon' />
-										</ButtonBox>
-									</WhiteButton>
+									<Link href='/' passHref>
+										<GreenButton>
+											Get Started&nbsp;
+											<ButtonBox>
+												<ButtonIcon src='/Logo/ArrowIcon.png' alt='Arrow Icon' />
+											</ButtonBox>
+										</GreenButton>
+									</Link>
+
+									<Link href='#VideoGrid_Section' passHref>
+										<WhiteButton>
+											Watch Video
+											<ButtonBox>
+												<ButtonIcon src='/Logo/PlayIcon.png' alt='Play Icon' />
+											</ButtonBox>
+										</WhiteButton>
+									</Link>
 								</ButtonWrapper>
 							</TextBox>
 						</TextWrapper>
